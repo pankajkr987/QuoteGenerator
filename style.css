@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: black;
+}
+
+.container {
+    background: white;
+    width: 50vw;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 6px;
+
+}
+
+.container h2 {
+    position: relative;
+    font-size: 30px;
+    margin-bottom: 13px;
+    font-family: 'Playfair Display', serif;
+
+}
+
+.container h2::after {
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(20, 127, 241);
+    transform: translate(-50%);
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+
+}
+
+.container blockquote {
+    font-size: 26px;
+    min-height: 110px;
+
+}
+
+.container blockquote::before,
+.container blockquote::after {
+    content: '"';
+
+}
+
+.container span {
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+
+.container span::before {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: rgb(20, 127, 241);
+    position: absolute;
+    left: -30px;
+    top: 50%;
+}
+
+.container buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.buttons button {
+    background: rgb(20, 127, 241);
+    color: #fff;
+    height: 40px;
+    width: 150px;
+    margin: 5px;
+    border-radius: 25px;
+    border: 1px solid rgb(20, 127, 241);
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+
+.buttons img {
+    height: 18px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.buttons button:nth-child(2) {
+    background: transparent;
+    color: #333;
+}
+
+.buttons button:nth-child(3) {
+    color: #fff;
+    background-color: #25d366;
+    border: 1px solid white;
+}
+
+footer {
+    background-color: #1b1b18;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
